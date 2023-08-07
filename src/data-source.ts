@@ -1,6 +1,6 @@
+import "reflect-metadata";
 import "dotenv/config";
 import path from "path";
-import "reflect-metadata";
 import { DataSource, DataSourceOptions } from "typeorm";
 
 const dataSourceConfig = (): DataSourceOptions => {
@@ -13,14 +13,14 @@ const dataSourceConfig = (): DataSourceOptions => {
 
   const nodeEnv: string | undefined = process.env.NODE_ENV;
 
-  if (nodeEnv === "test") {
-    return {
-      type: "sqlite",
-      database: ":memory:",
-      synchronize: true,
-      entities: [entitiesPath],
-    };
-  }
+  // if (nodeEnv === "test") {
+  //   return {
+  //     type: "sqlite",
+  //     database: ":memory:",
+  //     synchronize: true,
+  //     entities: [entitiesPath],
+  //   };
+  // }
 
   return {
     type: "postgres",
