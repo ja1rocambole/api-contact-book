@@ -28,7 +28,7 @@ export class Client {
   telphone: string;
 
   @CreateDateColumn({ type: "date" })
-  createdAt: Date | string;
+  createdAt: string;
 
   @OneToMany(() => Contact, (contact) => contact.client)
   contacts: Contact;

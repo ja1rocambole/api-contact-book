@@ -19,19 +19,22 @@
   },
   "homepage": "https://github.com/ja1rocambole/api-contact-book#readme",
   "dependencies": {
+    "@types/bcryptjs": "^2.4.2",
     "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.2",
     "@types/node": "^20.4.8",
     "@types/pg": "^8.10.2",
     "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.1",
     "pg": "^8.11.2",
     "reflect-metadata": "^0.1.13",
     "ts-node-dev": "^2.0.0",
     "typeorm": "^0.3.17",
     "typescript": "^5.1.6",
-    "zod": "^3.21.4",
-    "@types/bcryptjs": "^2.4.2"
+    "zod": "^3.21.4"
   }
 }
